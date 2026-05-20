@@ -1,0 +1,365 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-05-20 02:19:41",
+    "containerVersion": {
+        "path": "accounts/6356274863/containers/252967378/versions/0",
+        "accountId": "6356274863",
+        "containerId": "252967378",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6356274863/containers/252967378",
+            "accountId": "6356274863",
+            "containerId": "252967378",
+            "name": "[server] - gtm 2",
+            "publicId": "GTM-WHGWFG6J",
+            "usageContext": [
+                "SERVER"
+            ],
+            "fingerprint": "1779243407236",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6356274863/containers/252967378/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": true,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": true
+            },
+            "tagIds": [
+                "GTM-WHGWFG6J"
+            ]
+        },
+        "variable": [
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "8",
+                "name": "cs - x-geo-ipaddress",
+                "type": "rh",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "headerName",
+                        "value": "x-geo-ipaddress"
+                    }
+                ],
+                "fingerprint": "1779243442441",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "9",
+                "name": "cs - x-geo-ipaddress IPV6",
+                "type": "cvt_KT526",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "ip_address",
+                        "value": "{{cs - x-geo-ipaddress}}"
+                    }
+                ],
+                "fingerprint": "1779243442441",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "11",
+                "name": "fb - pixel - token",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "seu token aqui"
+                    }
+                ],
+                "fingerprint": "1779243442442",
+                "parentFolderId": "10",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "12",
+                "name": "cs - x-geo-country",
+                "type": "rh",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "headerName",
+                        "value": "x-geo-country"
+                    }
+                ],
+                "fingerprint": "1779243442442",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "14",
+                "name": "cs - x-geo-postalcode",
+                "type": "rh",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "headerName",
+                        "value": "x-geo-postalcode"
+                    }
+                ],
+                "fingerprint": "1779243442514",
+                "formatValue": {
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "15",
+                "name": "cs - x-geo-city",
+                "type": "rh",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "headerName",
+                        "value": "x-geo-city"
+                    }
+                ],
+                "fingerprint": "1779243442515",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "16",
+                "name": "cs - x-geo-city-fb",
+                "type": "cvt_252967378_5",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cidade",
+                        "value": "{{cs - x-geo-city}}"
+                    }
+                ],
+                "fingerprint": "1779243442515",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "17",
+                "name": "cs - x-geo-region",
+                "type": "rh",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "headerName",
+                        "value": "x-geo-region"
+                    }
+                ],
+                "fingerprint": "1779243442515",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "18",
+                "name": "fb - pixel - id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "seu pixel id"
+                    }
+                ],
+                "fingerprint": "1779243442515",
+                "parentFolderId": "10",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "variableId": "19",
+                "name": "lookup table - event_code",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Debug Mode}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "false"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "TEST8400"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1779243442515",
+                "parentFolderId": "10",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "folderId": "10",
+                "name": "Facebook Ads",
+                "fingerprint": "1779243442442"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "type": "DEBUG_MODE",
+                "name": "Debug Mode"
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "type": "CLIENT_NAME",
+                "name": "Client Name"
+            }
+        ],
+        "fingerprint": "1779243581409",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6356274863/containers/252967378/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "templateId": "5",
+                "name": "Formata valor da cidade para Facebook CAPI",
+                "fingerprint": "1779243442438",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Formata valor da cidade para Facebook CAPI\",\n  \"description\": \"Formata valor da cidade para\",\n  \"containerContexts\": [\n    \"SERVER\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"cidade\",\n    \"displayName\": \"Variável String a ser tratada:\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_SERVER___\n\nfunction replaceMalformedChars(str) {\n  var malformedCharsMap = {\n    'Ã§': 'ç',\n    'Ã¡': 'á',\n    'Ã©': 'é',\n    'Ã­': 'í',\n    'Ã³': 'ó',\n    'Ãº': 'ú',\n    'Ã£': 'ã',\n    'Ãµ': 'õ',\n    'Ã¢': 'â',\n    'Ãª': 'ê',\n    'Ã®': 'î',\n    'Ã´': 'ô',\n    'Ã¯': 'ï',\n    'Ã¼': 'ü',\n    'Ã¶': 'ö',\n    'Ã§': 'ç',\n    'Ã¿': 'ÿ'\n  };\n\n  for (var malformedChar in malformedCharsMap) {\n    str = str.split(malformedChar).join(malformedCharsMap[malformedChar]);\n  }\n\n  return str;\n}\n\nfunction removeDiacritics(str) {\n  var diacriticsMap = {\n    'A': 'ÁÀÂÃÄÅĀĂĄǍȀȂȦȺ',\n    'a': 'áàâãäåāăąǎȁȃȧⱥ',\n    'C': 'ÇĆĈĊČȻ',\n    'c': 'çćĉċčȼ',\n    'D': 'ĎĐḊḌḎḐḒ',\n    'd': 'ďđḋḍḏḑḓ',\n    'E': 'ÉÈÊËĒĔĖĘĚȄȆȨ',\n    'e': 'éèêëēĕėęěȅȇȩ',\n    'G': 'ĜĞĠĢǦǴ',\n    'g': 'ĝğġģǧǵ',\n    'H': 'ĤĦȞ',\n    'h': 'ĥħȟ',\n    'I': 'ÍÌÎÏĨĪĬĮİǏȈȊ',\n    'i': 'íìîïĩīĭįıǐȉȋ',\n    'J': 'Ĵ',\n    'j': 'ĵ',\n    'K': 'ĶǨ',\n    'k': 'ķǩ',\n    'L': 'ĹĻĽĿŁ',\n    'l': 'ĺļľŀł',\n    'N': 'ÑŃŅŇǸȠ',\n    'n': 'ñńņňǹȵ',\n    'O': 'ÓÒÔÕÖØŌŎŐǑȌȎȪ',\n    'o': 'óòôõöøōŏőǒȍȏȫ',\n    'R': 'ŔŖŘȐȒ',\n    'r': 'ŕŗřȑȓ',\n    'S': 'ŚŜŞŠȘ',\n    's': 'śŝşšș',\n    'T': 'ŢŤŦȚȾ',\n    't': 'ţťŧțⱦ',\n    'U': 'ÚÙÛÜŨŪŬŮŰŲȔȖ',\n    'u': 'úùûüũūŭůűųȕȗ',\n    'W': 'ŴẀẂẄ',\n    'w': 'ŵẁẃẅ',\n    'Y': 'ÝŸŶȲ',\n    'y': 'ýÿŷȳ',\n    'Z': 'ŹŻŽȤ',\n    'z': 'źżžȥ',\n    'AE': 'ÆǼǢ',\n    'ae': 'æǽǣ',\n    'ss': 'ß',\n    'OE': 'Œ',\n    'oe': 'œ'\n  };\n\n  var result = '';\n  for (var i = 0; i < str.length; i++) {\n    var char = str[i];\n    var replaced = false;\n    for (var baseChar in diacriticsMap) {\n      if (diacriticsMap[baseChar].indexOf(char) !== -1) {\n        result += baseChar;\n        replaced = true;\n        break;\n      }\n    }\n    if (!replaced) {\n      result += char;\n    }\n  }\n\n  return result;\n}\n\nfunction removeNonAlphanumeric(str) {\n  var result = '';\n  for (var i = 0; i < str.length; i++) {\n    var char = str.charAt(i);\n    if ((char >= '0' && char <= '9') || \n        (char >= 'A' && char <= 'Z') || \n        (char >= 'a' && char <= 'z')) {\n      result += char;\n    }\n  }\n  return result;\n}\n\nvar cidade = data.cidade;\n\nif (cidade === undefined || cidade === null) {\n  return \"\";\n}\n\ncidade = replaceMalformedChars(cidade);\ncidade = removeDiacritics(cidade);\ncidade = removeNonAlphanumeric(cidade);\n\nreturn cidade;\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 31/07/2024, 10:55:00\n\n\n"
+            },
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "templateId": "7",
+                "name": "IPv4 to IPv6",
+                "fingerprint": "1779243442438",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_KT526\",\n  \"version\": 1,\n  \"displayName\": \"IPv4 to IPv6\",\n  \"description\": \"Template to change IP format from IPv4 to IPv6 in compatible mode\",\n  \"containerContexts\": [\n    \"SERVER\"\n  ],\n  \"brand\": {\n    \"displayName\": \"74minutos\",\n    \"id\": \"github.com_74minutos\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"ip_address\",\n    \"displayName\": \"Field to change\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_SERVER___\n\n// IP Transformer - Versión simplificada\nconst getType = require('getType');\nconst logToConsole = require('logToConsole');\nconst getContainerVersion = require('getContainerVersion');\nconst createRegex = require('createRegex');\nconst makeInteger = require('makeInteger');\n\n// Determinar si el registro está habilitado\nconst isDebug = () => {\n  const containerVersion = getContainerVersion();\n  return containerVersion && (containerVersion.debugMode || containerVersion.previewMode);\n};\n\n/**\n * Convierte una dirección IPv4 a formato IPv6 mapeado comprimido\n * Ejemplo: 88.18.141.218 -> ::ffff:5812:8dda\n */\nfunction ipv4ToMappedIPv6Compressed(ipv4) {\n  // Validar que la entrada sea una cadena\n  if (!ipv4 || getType(ipv4) !== 'string') {\n    return ipv4;\n  }\n  \n  // Validar que sea una IPv4 válida usando createRegex\n  const ipRegex = createRegex('^(\\\\d{1,3})\\\\.(\\\\d{1,3})\\\\.(\\\\d{1,3})\\\\.(\\\\d{1,3})$');\n  const match = ipv4.match(ipRegex);\n  \n  if (!match) {\n    return ipv4; // No es una IPv4 válida, devolver sin cambios\n  }\n  \n  // Convertir cada parte a hexadecimal\n  const hex = [];\n  let isValid = true;\n  \n  for (let i = 1; i <= 4; i++) {\n    const decimal = makeInteger(match[i]);\n    \n    // Validar que cada parte esté entre 0-255\n    if (decimal < 0 || decimal > 255) {\n      if (isDebug()) logToConsole('IP inválida:', ipv4);\n      isValid = false;\n      break;\n    }\n    \n    // Convertir a hexadecimal y asegurar que tenga dos dígitos\n    let hexValue = decimal.toString(16);\n    if (hexValue.length === 1) hexValue = '0' + hexValue;\n    hex.push(hexValue);\n  }\n  \n  // Si alguna parte no era válida, devolver la IP original\n  if (!isValid) return ipv4;\n  \n  // Combinar en el formato ::ffff:XXXX:XXXX\n  const firstPair = hex[0] + hex[1];\n  const secondPair = hex[2] + hex[3];\n  \n  return '::ffff:' + firstPair + ':' + secondPair;\n}\n\n// Obtener la IP de la configuración\nconst ipAddress = data.ip_address;\n\n// Transformar la IP\nconst transformedIp = ipv4ToMappedIPv6Compressed(ipAddress);\n\n// Registrar para depuración si es necesario\nif (isDebug()) {\n  logToConsole('IP Transformer:', {\n    original: ipAddress,\n    transformed: transformedIp\n  });\n}\n\n// Devolver la IP transformada\nreturn transformedIp;\n\n\n___SERVER_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_container_data\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: Untitled test 1\n  code: |-\n    const mockData = \"88.19.39.112\";\n\n    // Call runCode to run the template's code.\n    let variableResult = runCode(mockData);\n\n    // Verify that the variable returns a result.\n    assertThat(variableResult).isEqualTo(\"0000:0000:0000:0000:0000:ffff:5813:2770\");\n\n\n___NOTES___\n\nCreated on 9/4/2025, 10:54:12\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "74minutos",
+                    "repository": "ip_format_transformer",
+                    "version": "b9ce880ac8db98aec97ef3961ba07c3974d1865c",
+                    "signature": "ac61f98e20556f74db6648336822aabf60873f4c2c7b1f0301c2da62f0acfe34",
+                    "galleryTemplateId": "KT526"
+                }
+            }
+        ],
+        "client": [
+            {
+                "accountId": "6356274863",
+                "containerId": "252967378",
+                "clientId": "28",
+                "name": "Google Analytics GA4 (Web)",
+                "type": "gaaw_client",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieMaxAgeInSec",
+                        "value": "63072000"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateDefaultPaths",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookiePath",
+                        "value": "/"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "migrateFromJsClientId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieManagement",
+                        "value": "server"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieName",
+                        "value": "FPID"
+                    }
+                ],
+                "fingerprint": "1779243562361"
+            }
+        ]
+    }
+}
