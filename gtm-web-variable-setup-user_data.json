@@ -1,0 +1,245 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-05-22 00:53:00",
+    "containerVersion": {
+        "path": "accounts/6267155344/containers/205205375/versions/0",
+        "accountId": "6267155344",
+        "containerId": "205205375",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6267155344/containers/205205375",
+            "accountId": "6267155344",
+            "containerId": "205205375",
+            "name": "[WEB] - mensuro.me",
+            "publicId": "GTM-M9B78Q3G",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1738356754198",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6267155344/containers/205205375/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-M9B78Q3G"
+            ]
+        },
+        "trigger": [
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "triggerId": "39",
+                "name": "ec - generate_lead",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "generate_lead"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1766379015035"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "46",
+                "name": "dtl - user_data.email",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.email"
+                    }
+                ],
+                "fingerprint": "1766379678941",
+                "formatValue": {
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "47",
+                "name": "dtl - user_data.phone",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.phone"
+                    }
+                ],
+                "fingerprint": "1766379698758",
+                "formatValue": {
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "48",
+                "name": "dtl - user_data.first_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.name"
+                    }
+                ],
+                "fingerprint": "1779411094588",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "49",
+                "name": "dtl - user_data.last_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data.last_name"
+                    }
+                ],
+                "fingerprint": "1766379732248",
+                "formatValue": {
+                    "caseConversionType": "LOWERCASE",
+                    "convertNullToValue": {
+                        "type": "TEMPLATE",
+                        "value": "undefined"
+                    }
+                }
+            },
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "70",
+                "name": "dtl - user_data",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "user_data"
+                    }
+                ],
+                "fingerprint": "1779411075193",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6267155344",
+                "containerId": "205205375",
+                "variableId": "71",
+                "name": "user_data - UPD",
+                "type": "awec",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "mode",
+                        "value": "CODE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "dataSource",
+                        "value": "{{dtl - user_data}}"
+                    }
+                ],
+                "fingerprint": "1774579968883",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1779411180340",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6267155344/containers/205205375/versions/0?apiLink=version"
+    }
+}
